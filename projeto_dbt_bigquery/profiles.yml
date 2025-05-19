@@ -1,0 +1,10 @@
+projeto_dbt_bigquery:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: projeto-dbt-460304
+      dataset: "{{ env_var('DBT_DBNAME', 'dbt_dw') }}"
+      threads: 4
+      keyfile: /home/hunter/.dbt/projeto-dbt-460304-fe2bfb0114c7.json
