@@ -1,0 +1,5 @@
+.env
+.projetodbt
+target/
+dbt_packages/
+logs/
