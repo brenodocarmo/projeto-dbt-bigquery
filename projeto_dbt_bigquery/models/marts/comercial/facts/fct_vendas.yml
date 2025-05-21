@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fct_vendas
+    description: "Fato vendas da empresa"
+    columns:
+      - name: mes
+        description: "Mês da venda"
+        data_tests:
+          - not_null
+      - name: ano
+        description: "Ano da venda"
+      - name: total_frete
+        description: "Total do frete"
+        data_tests:
+          - not_null
